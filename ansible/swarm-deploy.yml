@@ -1,6 +1,6 @@
   - hosts: swarm-master
     tasks:
-    - name: Install git, python 3.8
+    - name: Install git
       apt:
         name:
           - git
@@ -14,4 +14,4 @@
         clone: yes
         update: yes
     - name: Clone a github repository
-      shell: "cd /microservices && docker stack deploy -c docker-compose-swarn.yml my_app"
+      shell: "cd /microservices/ && docker stack deploy -c docker-compose-swarn.yml my_app"
