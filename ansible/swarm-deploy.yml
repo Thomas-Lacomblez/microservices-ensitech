@@ -1,4 +1,4 @@
-  - hosts: all
+  - hosts: swarm-master
     tasks:
     - name: Install git, python 3.8
       apt:
