@@ -1,7 +1,4 @@
   - hosts: all
-    become: yes
-    become_user: root
-    become_method: sudo
     tasks:
     - name: Install git, python 3.8
       apt:
